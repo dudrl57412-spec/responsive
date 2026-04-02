@@ -10,3 +10,7 @@ a{
     columns: #333;
     text-decoration: none;
 }
+img{
+    width: 100%;
+    display: block;
+}
