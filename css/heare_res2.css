@@ -1,78 +1,78 @@
 @import url("reset.css");
-.wrap {
-  width: 100%;
-}
 a {
   color: #fff;
 }
-/* header */
-.inner {
+.wrap {
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
 }
+.inner {
+  margin: auto;
+  max-width: 1200px;
+  min-width: 200px;
+}
+/* 헤더 */
 .header {
-  background-color: #333;
+    min-width: 200px;
+  background-color: black;
   color: #fff;
-  display: flex;
+  padding: 20px 20px;
   align-items: center;
-  padding: 20px 0;
 }
 .header .inner {
+  max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.hamburger {
-  display: none;
-}
 .menu {
+  display: flex;
   width: 50%;
   max-width: 500px;
   min-width: 365px;
-  background-color: antiquewhite;
-  display: flex;
+  /* background-color: rgb(252, 12, 12); */
 }
-.menu a {
+.menu li {
+    font-size: 20px;
   width: calc(100% / 4);
   text-align: center;
-  background-color: aquamarine;
+  /* background-color: rgb(99, 99, 99); */
   padding: 10px 0;
 }
-.menu a:hover {
-  background-color: rgb(110, 223, 185);
+.menu li:hover {
+  background-color: rgb(71, 71, 71);
 }
-/* main */
-/* .container .inner {
-  padding: 50px 0;
-} */
+.hamburger {
+  display: none;
+}
+.main {
+  /* background-color: aqua; */
+}
 .card-list {
-  padding: 50px 0;
-}
-.container .card-list {
+  padding: 20px 20px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 2%;
   row-gap: 20px;
+  text-align: center;
 }
 .card-list li {
   width: calc((100% - 6%) / 4);
   background-color: aliceblue;
   padding: 2%;
 }
-@media (max-width: 768px) {
-  /* .header .inner {
-    padding: 0 20px;
-  } */
-  .inner {
-    padding: 0 20px;
+.card-list li:hover {
+  background-color: rgb(218, 226, 233);
+}
+.card-list li a {
+  color: black;
+}
+@media (max-width: 780px) {
+  .hamburger {
+    display: block;
+    font-size: 25px;
   }
   .menu {
     display: none;
-  }
-  .hamburger {
-    display: block;
-    font-size: 20px;
   }
   .card-list li {
     width: calc((100% - 4%) / 3);
@@ -86,7 +86,7 @@ a {
     width: calc((100% - 2%) / 2);
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 300px) {
   .card-list li {
     width: 100%;
   }
