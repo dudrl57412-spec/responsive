@@ -1,0 +1,55 @@
+@import url("reset.css");
+/* 공통영역 */
+.inner {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: antiquewhite;
+}
+/* 상단 */
+.header {
+  background-color: burlywood;
+  height: 80px;
+}
+.header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: aquamarine;
+}
+h1 {
+  font-size: clamp(24px, 4vw, 36px);
+}
+/* pc버전에서 숨기기 */
+.menu-btn {
+  display: none;
+}
+.gnb {
+  display: flex;
+  gap: 20px;
+}
+/* 비주얼 */
+.visual {
+  position: relative;
+  padding-top: 8%;
+
+  background-color: #ddd;
+}
+.visual img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.visual .inner {
+  position: relative;
+}
+.visual-txt {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: red;
+}
+/* 상품 */
+
+/* 하단 */
