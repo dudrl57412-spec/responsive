@@ -1,0 +1,56 @@
+/* 768px */
+@media (max-width: 768px) {
+  .gnb {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+  .gnb li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  .menu-btn {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  /* visual */
+  .pc-visual {
+    display: none;
+  }
+  .visual {
+    aspect-ratio: 1/1;
+  }
+  .tablet-visual {
+    display: block;
+  }
+  /* 상품 */
+  .product-list li {
+    width: calc((100% - 40px) / 3);
+  }
+  /* footer */
+  footer .inner {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+/* 480px */
+@media (max-width: 480px) {
+  /* 상품 */
+  .product-list li {
+    width: calc((100% - 20px) / 2);
+  }
+}
+/* 390px */
+@media (max-width: 390px) {
+  /* 상품 */
+  .product-list li {
+    width: 100%;
+  }
+}
